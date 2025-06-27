@@ -1,0 +1,108 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F0F8FF; /* AliceBlue - बहुत हल्का नीला बैकग्राउंड */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.container {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 1.5rem; /* More rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 2.5rem;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative; /* For the copy message */
+}
+.quote-text {
+    font-size: 1.75rem; /* Larger font size for quote */
+    font-weight: 600;
+    color: #334155; /* Darker text for readability */
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    min-height: 120px; /* Ensure consistent height for quote display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+.quote-author {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #64748b; /* Lighter text for author */
+    text-align: right;
+    margin-top: -0.5rem; /* Pull author up closer to quote */
+    padding-right: 1rem;
+}
+.button-group {
+    display: flex;
+    flex-direction: column; /* Stack buttons on small screens */
+    gap: 1rem;
+    width: 100%;
+}
+.btn {
+    padding: 1rem 1.5rem;
+    border-radius: 0.75rem; /* Rounded buttons */
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Soft button shadow */
+}
+.btn-primary {
+    background-color: #87CEEB; /* SkyBlue - हल्का नीला */
+    color: #ffffff;
+}
+.btn-primary:hover {
+    background-color: #6A5ACD; /* SlateBlue - थोड़ा गहरा नीला */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+.btn-secondary {
+    background-color: #ADD8E6; /* LightBlue - बहुत हल्का नीला */
+    color: #4f46e5; /* मूल नीला रंग बनाए रखें या इसे गहरा नीला कर सकते हैं */
+    border: 1px solid #7B68EE; /* MediumSlateBlue - हल्का नीला बॉर्डर */
+}
+.btn-secondary:hover {
+    background-color: #B0E0E6; /* PowderBlue - और भी हल्का नीला */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+.message-box {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #10b981; /* Green for success */
+    color: #ffffff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+}
+.message-box.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsive adjustments */
+@media (min-width: 640px) {
+    .button-group {
+        flex-direction: row; /* Buttons side-by-side on larger screens */
+    }
+}

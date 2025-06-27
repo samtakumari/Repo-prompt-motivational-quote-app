@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>प्रेरणादायक उद्धरण ऐप</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">आज का प्रेरणादायक उद्धरण</h1>
+        <div class="quote-text" id="quoteText">
+            "जब तक आप कोशिश करना नहीं छोड़ते, आप असफल नहीं होते।"
+        </div>
+        <div class="quote-author" id="quoteAuthor">
+            - अल्बर्ट आइंस्टीन
+        </div>
+        <div class="button-group">
+            <button class="btn btn-primary" id="newQuoteBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.186a1 1 0 00.27.677l3.957 3.957A4 4 0 0110 18a4 4 0 01-3.666-2.022c-.22-.387-.643-.604-1.074-.533L4.24 15.35c-.53.08-.985-.295-.985-.826v-2.09c0-.464.331-.86.794-.964l1.24-.265c.407-.087.64-.492.518-.88l-.895-2.91a1 1 0 00-.702-.738L4 5.37V3a1 1 0 011-1zM16 2a1 1 0 011 1v2.186a1 1 0 00.27.677l3.957 3.957A4 4 0 0120 18a4 4 0 01-3.666-2.022c-.22-.387-.643-.604-1.074-.533L14.24 15.35c-.53.08-.985-.295-.985-.826v-2.09c0-.464.331-.86.794-.964l1.24-.265c.407-.087.64-.492.518-.88l-.895-2.91a1 1 0 00-.702-.738L14 5.37V3a1 1 0 011-1z" clip-rule="evenodd" />
+                </svg>
+                नया उद्धरण
+            </button>
+            <button class="btn btn-secondary" id="shareQuoteBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M15 8a3 3 0 10-2.977-2.977l-2.122 1.284a3 3 0 00-1.236 0L7.023 5.023A3 3 0 104 8a3 3 0 00.977 2.977l2.122-1.284a3 3 0 001.236 0l2.122 1.284A3 3 0 1015 8zm-3-3a1 1 0 11-2 0 1 1 0 012 0zM4 9a1 1 0 100-2 1 1 0 000 2zm9 6a1 1 0 100-2 1 1 0 000 2z" />
+                </svg>
+                साझा करें
+            </button>
+        </div>
+        <div id="messageBox" class="message-box">
+            उद्धरण कॉपी किया गया!
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
